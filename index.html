@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Project Melody 💜</title>
+
+    <meta name="theme-color"
+          content="#6D28D9">
+
+    <meta name="description"
+          content="Un regalo hecho con mucho cariño para Xiomara.">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Great+Vibes&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- FONDO -->
+    <!-- ===================================== -->
+
+    <div class="background">
+
+        <div class="moon"></div>
+
+        <div class="stars"></div>
+
+        <div class="particles"></div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- MUSICA -->
+    <!-- ===================================== -->
+
+    <audio id="music" loop>
+    <source src="assets/music/bonsai.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton"
+            class="musicButton">
+
+        🎵
+
+    </button>
+
+    <!-- ===================================== -->
+    <!-- PANTALLA 1 -->
+    <!-- ===================================== -->
+
+    <section id="home"
+             class="page active">
+
+        <div class="glass">
+
+            <p class="hello">
+
+                Hola...
+
+            </p>
+
+            <h1>
+
+                Xiomara
+
+            </h1>
+
+            <p class="subtitle">
+
+                No todos los regalos vienen envueltos.
+
+                <br><br>
+
+                Algunos se construyen con tiempo,
+
+                cariño...
+
+                <br>
+
+                y un poco de código.
+
+            </p>
+
+            <button id="startButton">
+
+                ✨ Comenzar este viaje
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- PANTALLA 2 -->
+    <!-- ===================================== -->
+
+    <section id="story"
+             class="page">
+
+        <div class="storyBox">
+
+            <h2 id="storyText">
+
+            </h2>
+
+            <button id="storyNext">
+
+                Continuar 💜
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- PANTALLA 3 -->
+    <!-- ===================================== -->
+
+    <section id="letter"
+             class="page">
+
+        <div class="envelope">
+
+            <div class="paper">
+
+                <h2>
+
+                    Para ti 💜
+
+                </h2>
+
+                <p id="letterText">
+
+                </p>
+
+                <button id="letterButton">
+
+                    Abrir el álbum 📸
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ===================================== -->
+    <!-- PANTALLA 4 - ÁLBUM -->
+    <!-- ===================================== -->
+
+    <section id="album" class="page">
+
+        <h2 class="sectionTitle">
+            Nuestro pequeño álbum 📸
+        </h2>
+
+        <div class="album">
+
+            <div class="photo">
+                <img src="assets/imagenes/foto1.jpeg" alt="Nuestra primera salida">
+                <h3>Munanqui 🍽️</h3>
+                <p>Nuestra primera salida juntos.</p>
+            </div>
+
+            <div class="photo">
+                <img src="assets/imagenes/foto2.jpeg" alt="Karaoke">
+                <h3>Karaoke 🎤</h3>
+                <p>Una noche llena de risas y canciones.</p>
+            </div>
+
+            <div class="photo">
+                <img src="assets/imagenes/foto3.jpeg" alt="Mi Sinfonía">
+                <h3>Mi Sinfonía 🌙</h3>
+                <p>Los momentos simples son los más bonitos.</p>
+            </div>
+
+        </div>
+
+        <button id="albumButton">
+            Continuar ❤️
+        </button>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- PANTALLA 5 - LÍNEA DEL TIEMPO -->
+    <!-- ===================================== -->
+
+    <section id="timeline" class="page">
+
+        <h2 class="sectionTitle">
+            Nuestra historia ✨
+        </h2>
+
+        <div class="timeline">
+
+            <div class="event">
+                <span>🏫</span>
+                <h3>Secundaria</h3>
+                <p>Donde todo comenzó.</p>
+            </div>
+
+            <div class="event">
+                <span>🍽️</span>
+                <h3>Munanqui</h3>
+                <p>Nuestra primera salida.</p>
+            </div>
+
+            <div class="event">
+                <span>🎤</span>
+                <h3>Karaoke</h3>
+                <p>Cantamos juntos.</p>
+            </div>
+
+            <div class="event">
+                <span>🌙</span>
+                <h3>Mi Sinfonía</h3>
+                <p>Una noche muy especial.</p>
+            </div>
+
+            <div class="event">
+                <span>🎂</span>
+                <h3>Hoy</h3>
+                <p>Tu cumpleaños.</p>
+            </div>
+
+        </div>
+
+        <button id="timelineButton">
+
+            Quiero seguir 💜
+
+        </button>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- PANTALLA 6 -->
+    <!-- ===================================== -->
+
+    <section id="love" class="page">
+
+        <div class="glass">
+
+            <h2>
+
+                10 cosas que adoro de ti ❤️
+
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">👀 Tus ojos.</div>
+
+                <div class="card">😊 Tu sonrisa.</div>
+
+                <div class="card">😂 Cuando dices "¿En serio?".</div>
+
+                <div class="card">🎤 Verte cantar.</div>
+
+                <div class="card">☕ Los cafés contigo.</div>
+
+                <div class="card">🌎 Tu forma de ver el mundo.</div>
+
+                <div class="card">💜 Tu personalidad.</div>
+
+                <div class="card">✨ Tu alegría.</div>
+
+                <div class="card">🤍 La paz que siento contigo.</div>
+
+                <div class="card">❤️ Porque eres tú.</div>
+
+            </div>
+
+            <button id="loveButton">
+
+                Última parada 🎁
+
+            </button>
+
+        </div>
+
+    </section>
+        <!-- ===================================== -->
+    <!-- PANTALLA 7 - CUMPLEAÑOS -->
+    <!-- ===================================== -->
+
+    <section id="birthday" class="page">
+
+        <div class="glass finalGlass">
+
+            <h1 class="birthdayTitle">
+                🎉 Feliz Cumpleaños 🎉
+            </h1>
+
+            <h2 class="birthdayName">
+                Xiomara 💜
+            </h2>
+
+            <p class="birthdayText">
+
+                Espero que este pequeño viaje te haya sacado una sonrisa.
+
+                <br><br>
+
+                Cada pantalla...
+
+                <br>
+
+                Cada animación...
+
+                <br>
+
+                Cada línea de código...
+
+                <br><br>
+
+                Fue creada pensando únicamente en ti.
+
+            </p>
+
+            <button id="surpriseButton">
+
+                💜 Hay una última cosa...
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- PANTALLA 8 - ÚLTIMA SORPRESA -->
+    <!-- ===================================== -->
+
+    <section id="surprise" class="page">
+
+        <div class="finalMessage">
+
+            <div id="messageContainer">
+
+                <p class="secretLine">
+                    Gracias por volver a llegar a mi vida.
+                </p>
+
+                <p class="secretLine">
+                    No sé qué nos depare el futuro...
+                </p>
+
+                <p class="secretLine">
+                    Pero sí sé que cada momento contigo...
+                </p>
+
+                <p class="secretLine">
+                    Ha valido completamente la pena.
+                </p>
+
+                <p class="secretLine">
+                    Espero seguir escribiendo muchos recuerdos contigo.
+                </p>
+
+                <p class="secretLine">
+                    Y que este sea solamente el comienzo...
+                </p>
+
+            </div>
+
+            <div class="signature hidden">
+
+                <h1>
+                    Feliz cumpleaños 💜
+                </h1>
+
+                <h2>
+                    Xiomara
+                </h2>
+
+                <p>
+
+                    Con muchísimo cariño...
+
+                </p>
+
+                <h3>
+
+                    Cristofer
+
+                </h3>
+
+                <div class="codeStats">
+
+                    <div class="stat">
+
+                        <span>⌛</span>
+
+                        <strong>Más de 12 horas</strong>
+
+                        <small>creando este regalo</small>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <span>💻</span>
+
+                        <strong>+1000 líneas</strong>
+
+                        <small>escritas con cariño</small>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <span>❤️</span>
+
+                        <strong>Una sola inspiración</strong>
+
+                        <small>Tú</small>
+
+                    </div>
+
+                </div>
+
+                <button id="moonButton">
+
+                    🌙 Toca la luna
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- MENSAJE OCULTO -->
+    <!-- ===================================== -->
+
+    <div id="moonSecret" class="hidden">
+
+        <div class="secretBox">
+
+            <h2>
+
+                🌙 Gracias...
+
+            </h2>
+
+            <p>
+
+                Si llegaste hasta aquí...
+
+                significa que recorriste cada parte de este pequeño regalo.
+
+                <br><br>
+
+                Gracias por dedicarme unos minutos de tu tiempo.
+
+                <br><br>
+
+                Espero seguir creando recuerdos contigo.
+
+                ❤️
+
+            </p>
+
+            <button id="closeSecret">
+
+                Volver
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Canvas del confeti -->
+
+    <canvas id="confetti"></canvas>
+
+    <!-- Scripts -->
+
+    <script src="js/confetti.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <div class="bonsai-container">
+
+    <img src="assets/imagenes/bonsai.png"
+         alt="Bonsái"
+         class="bonsai">
+
+</div>
+    <!-- JavaScript -->
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
